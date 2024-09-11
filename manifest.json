@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Borderify",
+  "version": "1.0",
+
+  "description": "Adds a red border to all webpages matching mozilla.org.",
+
+  "icons": {
+    "48": "icons/calendar-svgrepo-com.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://publico.agcp.ipleiria.pt/paginas/ScheduleRptCursosSemanalPublico.aspx"],
+      "js": ["borderify.js"]
+    }
+  ]
+}
